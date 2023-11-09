@@ -6,10 +6,6 @@ This repository serves as the backend for the AskAI Chrome Extension, integratin
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your-username/AskAI-backend.git
-    ```
-
 2. Navigate to the project directory and install dependencies:
 
     ```bash
@@ -17,7 +13,7 @@ This repository serves as the backend for the AskAI Chrome Extension, integratin
     npm install
     ```
 
-3. Run the development server:
+3. Run the development server of NextJS API:
 
     ```bash
     npm run next
