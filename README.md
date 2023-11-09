@@ -1,33 +1,42 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# AskAI Backend API
 
-## Getting Started
+This repository serves as the backend for the AskAI Chrome Extension, integrating the Hugging Face model OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5. The Chrome Extension's build link can be found in the [AskAI Chrome Extension repo](https://github.com/manu-shukla/AskAI-chrome-extension)
 
-First, run the development server:
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/AskAI-backend.git
+    ```
+
+2. Navigate to the project directory and install dependencies:
+
+    ```bash
+    cd AskAI-backend
+    npm install
+    ```
+
+3. Run the development server:
+
+    ```bash
+    npm run next
+    ```
+
+    Ensure that port 3000 is available to avoid errors.
+
+4. Check if the API is running by visiting [localhost:3000/api/status](http://localhost:3000/api/status).
+
+5. Refer to the installation steps in the [AskAI Chrome Extension repo](https://github.com/manu-shukla/AskAI-chrome-extension) for further setup.
+
+## Extension Codebase
+
+This repository also includes the codebase for the Chrome Extension. To build the extension, run the following command in the terminal:
 
 ```bash
-pnpm dev
-# or
 npm run dev
 ```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+This will create a development build for the extension, allowing you to install and test it.
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
-
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
-
-## Making production build
-
-Run the following:
-
-```bash
-pnpm build
-# or
-npm run build
-```
-
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
-
-## Submit to the webstores
-
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+Feel free to reach out if you have any questions or need further assistance!
