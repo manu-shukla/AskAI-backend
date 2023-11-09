@@ -21,7 +21,7 @@ This repository serves as the backend for the AskAI Chrome Extension, integratin
 
     Ensure that port 3000 is available to avoid errors.
 
-4. Check if the API is running by visiting [localhost:3000/api/status](http://localhost:3000/api/status).
+4. Check if the API is running by visiting [http://localhost:3000/api/status](http://localhost:3000/api/status).
 
 5. Refer to the installation steps in the [AskAI Chrome Extension repo](https://github.com/manu-shukla/AskAI-chrome-extension) for further setup.
 
